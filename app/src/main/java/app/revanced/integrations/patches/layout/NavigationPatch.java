@@ -9,6 +9,7 @@ import android.widget.TextView;
 import java.util.Objects;
 
 import app.revanced.integrations.settings.SettingsEnum;
+import app.revanced.integrations.whitelist.Whitelist;
 
 public class NavigationPatch {
     public static Enum lastPivotTab;
@@ -28,6 +29,7 @@ public class NavigationPatch {
     }
 
     public static boolean switchCreateNotification(boolean original) {
+        if (Whitelist.isChannelADSWhitelisted()) return original;
         return SettingsEnum.SWITCH_CREATE_NOTIFICATION.getBoolean() || original;
     }
 
