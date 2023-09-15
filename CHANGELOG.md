@@ -1,3 +1,10 @@
+## [0.120.1](https://github.com/YT-Advanced/adsinte/compare/v0.120.0...v0.120.1) (2023-09-15)
+
+
+### Bug Fixes
+
+* Hello Ads ([a4f068b](https://github.com/YT-Advanced/adsinte/commit/a4f068ba5f10f5c2e37ad7466bb592c094c1b993))
+
 # [0.120.0](https://github.com/YT-Advanced/adsinte/compare/v0.119.1...v0.120.0) (2023-09-14)
 
 
