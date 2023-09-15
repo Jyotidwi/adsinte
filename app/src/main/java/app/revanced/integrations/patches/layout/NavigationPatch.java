@@ -1,6 +1,7 @@
 package app.revanced.integrations.patches.layout;
 
 import static app.revanced.integrations.utils.ReVancedUtils.hideViewUnderCondition;
+import static app.revanced.music.utils.ReVancedUtils.showToastShort;
 
 import android.app.Activity;
 import android.view.View;
@@ -29,7 +30,8 @@ public class NavigationPatch {
     }
 
     public static boolean switchCreateNotification(boolean original) {
-        if (Whitelist.isChannelADSWhitelisted()) return false;
+        if (Whitelist.isChannelADSWhitelisted()) return original;
+        showToastShort("Hello");
         return SettingsEnum.SWITCH_CREATE_NOTIFICATION.getBoolean() || original;
     }
 
