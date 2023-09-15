@@ -29,7 +29,7 @@ public class NavigationPatch {
     }
 
     public static boolean switchCreateNotification(boolean original) {
-        if (Whitelist.isChannelADSWhitelisted()) return original;
+        if (Whitelist.isChannelADSWhitelisted()) return false;
         return SettingsEnum.SWITCH_CREATE_NOTIFICATION.getBoolean() || original;
     }
 
