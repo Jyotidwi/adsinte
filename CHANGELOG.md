@@ -1,3 +1,10 @@
+## [0.120.2](https://github.com/YT-Advanced/adsinte/compare/v0.120.1...v0.120.2) (2023-09-15)
+
+
+### Bug Fixes
+
+* Add debug ([cf12ebf](https://github.com/YT-Advanced/adsinte/commit/cf12ebfaae56bbdfc7cf8258104e82115b4735a4))
+
 ## [0.120.1](https://github.com/YT-Advanced/adsinte/compare/v0.120.0...v0.120.1) (2023-09-15)
 
 
